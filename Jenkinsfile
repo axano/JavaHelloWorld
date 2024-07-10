@@ -16,8 +16,10 @@ pipeline{
             }
         }
     }
+    post{
+        success{
+            echo 'Build Success'
+        }
+    }
 }
 
-node{
-    //groovy script
-}

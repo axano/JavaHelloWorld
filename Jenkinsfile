@@ -1,10 +1,14 @@
 pipeline{
     agent any
-
+    tools {
+        jdk 'java'
+        maven 'maven'
+    }
     stages {
         stage("build"){
             steps{
                 echo 'Building'
+
             }
         }
         stage("scanning"){

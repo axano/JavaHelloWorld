@@ -20,6 +20,7 @@ pipeline{
             steps{
                 echo 'Security scanning'
                 echo 'Scanning dependency check'
+                sh '/var/security/OwaspDependecyCheck/dependency-check/dependency-check/bin/dependency-check.sh --out /tmp/ --scan /var/lib/jenkins/workspace/JavaHelloWorld_main/target/JavaHelloWorld-1.0-SNAPSHOT.jar'
                 echo 'Scanning Trivy'
                 echo 'Scanning Semgrep'
             }

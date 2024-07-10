@@ -10,6 +10,9 @@ pipeline{
         stage("scanning"){
             steps{
                 echo 'Security scanning'
+                echo 'Scanning dependency check'
+                echo 'Scanning Trivy'
+                echo 'Scanning Semgrep'
             }
         }
     }
